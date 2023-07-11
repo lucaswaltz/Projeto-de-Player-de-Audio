@@ -1,1 +1,45 @@
-.container {}
+.container {
+    background: linear-gradient(180deg, #0C0505 0%, #3A3535 47.92%, #5E5858 100%);
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    border-bottom: 1px solid #6A6363;
+}
+
+header img {
+
+    height: 70px;
+
+}
+
+.profile {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.profile img {
+
+    border-radius: 50%;
+    border: 2px solid #6A6363;
+}
+
+.profile span {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+
+    color: #FFFF;
+}
