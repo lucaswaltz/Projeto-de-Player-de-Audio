@@ -13,6 +13,7 @@ header {
     padding-right: 50px;
 
     border-bottom: 1px solid #6A6363;
+
 }
 
 header img {
@@ -42,4 +43,76 @@ header img {
     font-size: 17px;
 
     color: #FFFF;
+}
+
+main {
+
+    height: 650px;
+}
+
+main h1 {
+
+    margin-left: 150px;
+    margin-top: 45px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+
+    color: #FFFF;
+
+}
+
+.list-music {
+
+    display: flex;
+
+    gap: 25px;
+    margin-left: 160px;
+    margin-top: 10px;
+    padding-top: 25px;
+    width: 1525px;
+
+    border-top: 1px solid #6A6363;
+
+
+    list-style: none;
+
+}
+
+.list-music li {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+
+}
+
+.list-music li img {
+
+    width: 350px;
+
+}
+
+.list-music li strong {
+
+    padding: 10px 0 10px 0;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+
+    color: #FFFF;
+
+
+}
+
+.list-music li span {
+
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    font-size: 19px;
+
+    color: #CCC3C3;
 }
