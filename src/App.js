@@ -1,6 +1,13 @@
 import './App.css';
 import LogoImg from './assets/logo.svg'
 import ProfileImg from './assets/profile.jpg'
+import BtnStop from './assets/stop.svg'
+import BtnPrevious from './assets/previous.svg'
+import BtnPlay from './assets/play.svg'
+import BtnPause from './assets/pause.svg'
+import BtnNext from './assets/next.svg'
+
+
 
 
 function App() {
@@ -52,10 +59,33 @@ function App() {
             <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</span>
 
           </li>
-
         </ul>
 
       </main>
+
+      <footer>
+
+        <div className='music-info'>
+
+          <strong>
+            Nome da Música
+          </strong>
+
+          <span>
+            Nome do Artista
+          </span>
+
+        </div>
+
+        <div className='audio-buttons'>
+
+          <img className='btn-stop' src={BtnStop} />
+          <img className='btn-previous' src={BtnPrevious} />
+          <img className='btn-pause' src={BtnPause} />
+          <img className='btn-next' src={BtnNext} />
+        </div>
+
+      </footer>
 
     </div >
   );

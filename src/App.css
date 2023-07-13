@@ -47,13 +47,13 @@ header img {
 
 main {
 
-    height: 650px;
+    height: 620px;
 }
 
 main h1 {
 
-    margin-left: 150px;
-    margin-top: 45px;
+    margin-left: 225px;
+    margin-top: 25px;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -67,11 +67,11 @@ main h1 {
 
     display: flex;
 
-    gap: 25px;
-    margin-left: 160px;
+    gap: 70px;
+    margin-left: 230px;
     margin-top: 10px;
     padding-top: 25px;
-    width: 1525px;
+    width: 1450px;
 
     border-top: 1px solid #6A6363;
 
@@ -85,13 +85,21 @@ main h1 {
     display: flex;
     flex-direction: column;
 
-    width: 350px;
+    padding: 5px;
+    width: 290px;
 
 }
 
+.list-music li:hover {
+
+    transform: scale(1.05);
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
 .list-music li img {
 
-    width: 350px;
+    width: 290px;
 
 }
 
@@ -115,4 +123,66 @@ main h1 {
     font-size: 19px;
 
     color: #CCC3C3;
+}
+
+footer {
+
+    display: flex;
+
+
+    height: 164px;
+    background: linear-gradient(180deg, #383535 0%, rgba(133, 130, 130, 0.00) 100%);
+
+
+}
+
+.music-info {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.music-info strong {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #FFFF;
+}
+
+.music-info span {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+
+    color: #FFFF;
+}
+
+
+.audio-buttons {
+
+    display: flex;
+
+    gap: 30px;
+    margin-left: 460px;
+    margin-bottom: 50px;
+
+}
+
+.btn-stop,
+.btn-previous,
+.btn-next {
+
+    width: 70px;
+}
+
+.btn-pause {
+
+    width: 90px;
 }
