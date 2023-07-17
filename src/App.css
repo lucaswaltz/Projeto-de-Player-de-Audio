@@ -125,16 +125,7 @@ main h1 {
     color: #CCC3C3;
 }
 
-footer {
 
-    display: flex;
-
-
-    height: 164px;
-    background: linear-gradient(180deg, #383535 0%, rgba(133, 130, 130, 0.00) 100%);
-
-
-}
 
 .music-info {
 
@@ -164,8 +155,19 @@ footer {
     color: #FFFF;
 }
 
+footer {
 
-.audio-buttons {
+    display: flex;
+
+
+    height: 164px;
+    background: linear-gradient(180deg, #383535 0%, rgba(133, 130, 130, 0.00) 100%);
+
+
+}
+
+
+.controls-buttons {
 
     display: flex;
 

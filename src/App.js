@@ -1,16 +1,26 @@
 import './App.css';
-import LogoImg from './assets/logo.svg'
-import ProfileImg from './assets/profile.jpg'
-import BtnStop from './assets/stop.svg'
-import BtnPrevious from './assets/previous.svg'
-import BtnPlay from './assets/play.svg'
-import BtnPause from './assets/pause.svg'
-import BtnNext from './assets/next.svg'
+import LogoImg from './assets/logo.svg';
+import ProfileImg from './assets/profile.jpg';
+import BtnStop from './assets/stop.svg';
+import BtnPrevious from './assets/previous.svg';
+import BtnPlay from './assets/play.svg';
+import BtnPause from './assets/pause.svg';
+import BtnNext from './assets/next.svg';
+import musics from './musics';
+import MusicsCards from './components/Music.js';
+import { useState } from 'react';
+import { useRef } from 'react';
 
 
 
 
 function App() {
+
+  const [music, setMusic] = useState([...musics])
+  const titleRef = useRef(null)
+  const artistRef = useRef(null)
+
+
   return (
     <div className="container">
 
@@ -30,35 +40,8 @@ function App() {
 
         <ul className="list-music">
 
-          <li className="music-one">
+          {music.map((music) => (<MusicsCards key={music.id} music={music} titleRef={titleRef} artistRef={artistRef} />))}
 
-            <img src='https://storage.googleapis.com/pedagogico/frontend-files/aula-react-referencias-eventos/img1.jpg' />
-            <strong>Violão Acust.</strong>
-            <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</span>
-
-          </li>
-          <li className="music-two">
-
-            <img src='https://storage.googleapis.com/pedagogico/frontend-files/aula-react-referencias-eventos/img2.jpg' />
-            <strong>Just Things</strong>
-            <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</span>
-
-          </li>
-          <li className="music-three">
-
-            <img src='https://storage.googleapis.com/pedagogico/frontend-files/aula-react-referencias-eventos/img4.jpg' />
-            <strong>Maybe Other</strong>
-            <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</span>
-
-          </li>
-
-          <li className="music-four">
-
-            <img src='https://storage.googleapis.com/pedagogico/frontend-files/aula-react-referencias-eventos/img5.jpg' />
-            <strong>It's simple</strong>
-            <span>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</span>
-
-          </li>
         </ul>
 
       </main>
@@ -67,17 +50,18 @@ function App() {
 
         <div className='music-info'>
 
-          <strong>
-            Nome da Música
+          <strong ref={titleRef}>
+
           </strong>
 
-          <span>
-            Nome do Artista
+
+          <span ref={artistRef}>
+
           </span>
 
         </div>
 
-        <div className='audio-buttons'>
+        <div className='controls-buttons'>
 
           <img className='btn-stop' src={BtnStop} />
           <img className='btn-previous' src={BtnPrevious} />
