@@ -7,7 +7,6 @@ import BtnPlay from './assets/play.svg';
 import BtnPause from './assets/pause.svg';
 import BtnNext from './assets/next.svg';
 import musics from './musics';
-import MusicsCards from './components/Music.js';
 import { useState } from 'react';
 import { useRef } from 'react';
 
@@ -16,10 +15,16 @@ import { useRef } from 'react';
 
 function App() {
 
-  const [music, setMusic] = useState([...musics])
-  const titleRef = useRef(null)
-  const artistRef = useRef(null)
 
+  const [musicName, setMusicName] = useState()
+  const [artistName, setArtistName] = useState()
+
+  function selectMusic(music) {
+
+    setMusicName(music.title)
+    setArtistName(music.artist)
+
+  }
 
   return (
     <div className="container">
@@ -40,7 +45,14 @@ function App() {
 
         <ul className="list-music">
 
-          {music.map((music) => (<MusicsCards key={music.id} music={music} titleRef={titleRef} artistRef={artistRef} />))}
+          {musics.map((music) =>
+            <li key={music.id} onClick={() => selectMusic(music)}>
+              <img src={music.cover} />
+              <strong>{music.title}</strong>
+              <span>{music.description}</span>
+              <audio src={music.url} />
+            </li>
+          )}
 
         </ul>
 
@@ -50,12 +62,16 @@ function App() {
 
         <div className='music-info'>
 
-          <strong ref={titleRef}>
+          <strong >
+
+            {musicName}
 
           </strong>
 
 
-          <span ref={artistRef}>
+          <span>
+
+            {artistName}
 
           </span>
 

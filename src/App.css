@@ -94,6 +94,8 @@ main h1 {
 
     transform: scale(1.05);
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
 }
 
 
@@ -126,15 +128,27 @@ main h1 {
 }
 
 
+footer {
+
+    display: flex;
+
+
+    height: 164px;
+    background: linear-gradient(180deg, #383535 0%, rgba(133, 130, 130, 0.00) 100%);
+
+
+}
 
 .music-info {
 
     display: flex;
     flex-direction: column;
-
     gap: 9px;
+
     margin-top: 30px;
     margin-left: 40px;
+    width: 290px;
+
 }
 
 .music-info strong {
@@ -155,24 +169,13 @@ main h1 {
     color: #FFFF;
 }
 
-footer {
-
-    display: flex;
-
-
-    height: 164px;
-    background: linear-gradient(180deg, #383535 0%, rgba(133, 130, 130, 0.00) 100%);
-
-
-}
-
 
 .controls-buttons {
 
     display: flex;
 
     gap: 30px;
-    margin-left: 460px;
+    margin-left: 400px;
     margin-bottom: 50px;
 
 }
