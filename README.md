@@ -18,4 +18,15 @@ algo irei adicionar mais funcionalidades </h2>
 <img src="./src/assets/PrintDoProjeto2.png">
 
 
+<h2>Funcionalidade adicionada de quando você clica na capa da música a música clicada será tocada e o botão de pausar a 
+música vai aparecer e se clicar no botão de pause o de play ira aparecer</h2>
+
+<img src="./src/assets/PrintDoProjeto3.png">
+
+
+<h2> E botão de stop alem de parar a música reseta ela támbem</h2>
+
+
+
+
 <h2>E finalizando esse README vou falar como executar você terá que clonar para seu pc, abra o prompt de comando, vá até o diretório onde o projeto está localizado e de npm start isso tudo pelo cmd</h2>

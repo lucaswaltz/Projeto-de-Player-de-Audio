@@ -184,10 +184,19 @@ footer {
 .btn-previous,
 .btn-next {
 
+    cursor: pointer;
     width: 70px;
 }
 
 .btn-pause {
 
+    cursor: pointer;
+    width: 90px;
+    display: none
+}
+
+.btn-play {
+
+    cursor: pointer;
     width: 90px;
 }
